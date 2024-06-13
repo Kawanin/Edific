@@ -26,10 +26,6 @@ defineProps({
         type: String,
         required: true
     },
-    svgPath: {
-        type: Path2D,
-        required: true
-    }
 })
 </script>
 
@@ -39,8 +35,11 @@ defineProps({
 .card-container{
     max-width: 360px;
     text-align: center;
-    padding: 53px 3px;
+    padding: 40px 12px;
     position: relative;
+    border-radius: 20px;
+    box-shadow: -6px 0px 32px -13px rgba(0,0,0,0.15);
+
 }
 .svg-container{
     height: 50px;
@@ -48,10 +47,10 @@ defineProps({
     fill: #ff9549;
 }
 .text-container{
-    margin-bottom: 50px
+    margin-bottom: 30px
 }
 .title{
-    margin-top: 8px;
+    margin-top: 12px;
     margin-bottom: 16px;
     color: #000;
     font-weight: 600;

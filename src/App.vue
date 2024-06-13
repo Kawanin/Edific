@@ -23,6 +23,7 @@ import Card from './components/Card.vue'
 
   <QueroContratarButton/>
   <Card title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+
 </template>
 
 <style>
