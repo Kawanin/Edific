@@ -1,18 +1,23 @@
 <script setup>
 import WhatsAppIcon from './icons/WhatsAppIcon.vue'
+
+function openWhatsapp(){
+    window.open('http://google.com','_blank')
+}
 </script>
 
 <template>
-    <div>
-        <a href="">
-            <span>Quero contratar!</span>
-            <WhatsAppIcon class="icon"/>
-        </a>
+    <div @click="openWhatsapp">
+        <span>Quero contratar!</span>
+        <WhatsAppIcon class="icon"/>
     </div>
 </template>
 
 <style scoped>
-a{
+div{
+    height: fit-content;
+    padding: 20px 50px;
+
     font-size: 20px;
     font-weight: 500;
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
@@ -28,8 +33,10 @@ a{
     display: flex;
     align-items: center;
     transition: .3s ease-out;
+
+    cursor: pointer;
 }
-a:hover{
+div:hover{
     transform: translate(0px, -8px);
 }
 .icon{
