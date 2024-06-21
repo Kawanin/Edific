@@ -8,6 +8,8 @@ import image2 from "./assets/mapa2.webp"
 import ContactBar from './components/ContactBar.vue'
 import Card2 from './components/Card2.vue'
 import image0 from './assets/tab1.webp'
+import BottomBar from './components/BottomBar.vue'
+import EnterpriseLogo from './assets/logo-tab.png'
 </script>
 
 <template>
@@ -26,7 +28,7 @@ import image0 from './assets/tab1.webp'
 
   <RouterView /> -->
 
-
+  <BottomBar :enterpriseLogo="EnterpriseLogo" whatsapp="(11) 97178-2034" email="comercial@tabengenharia.com.br" instagram="@tabengenharia"/>
   <!-- <Card2 :image="image0" description="Possuímos corpo de engenharia especializado em engenharia diagnóstica para garantir as melhores soluções técnicas."/> -->
   <!-- <ContactBar email="contato@edificcontrutora.com" telephone="(44) 999915783" instagram="/tabengenharia"/>
   <LocalCard title="LOCAL 2" subtitle="R. São Cristóvão, 57 – ZONA 8 – Zona 08, Maringá – PR, 87050-490" telephone="(43) 99987-5018" :image="image2"/>
