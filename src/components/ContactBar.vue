@@ -58,12 +58,6 @@ function openInstagram() {
     display: flex;
     flex-wrap: wrap;
     box-shadow: 0px 0px 29px -16px rgba(0,0,0,0.75);
-
-
-    /* Remover daqui pra baixo depois que colocar no app e arrumar o base.css */
-    position: absolute;
-    left: 0;
-    top: 0;
 }
 .contact-bar-container > div{
     flex-grow: 1;
