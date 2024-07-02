@@ -53,7 +53,7 @@ function openInstagram() {
 
 <style scoped>
 .contact-bar-container{
-    width: 100vw;
+    width: 100%;
     height: 43px;
     display: flex;
     flex-wrap: wrap;
@@ -85,6 +85,9 @@ function openInstagram() {
   .contact-bar-container > div{
     width: initial;
   }
+  .contact-bar-container > div > div{
+    padding: 0px 10px;
+    }
 }
 
 @media (max-width: 760px) {

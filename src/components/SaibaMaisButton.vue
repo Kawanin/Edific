@@ -21,6 +21,7 @@ a{
 
     transition: .3s ease-out;
     display: inline-block;
+    text-decoration: none; 
 }
 a:hover{
     transform: translate(0, -8px);
