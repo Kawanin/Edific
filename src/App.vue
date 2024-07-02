@@ -41,10 +41,12 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
   </div>
 
   <div class="third-page-container">
-    <h2>EDIFIC CONSTRUTORA</h2>
-    <p>Realizamos o diagnóstico em edificações buscando garantir a sua integridade e atribuindo soluções aos problemas construtivos, sejam estes originados na fase de projetos, durante a execução da obra, por carência de manutenção, em função de vícios construtivos, ou ainda, em razão de sinistros.</p>
-    <p>Com objetivo de ser referência no mercado da perícia técnica e diagnóstica, a TAB Engenharia visa priorizar a segurança, a durabilidade e habitabilidade das edificações, além de, atentar a saúde e o bem estar de seus usuários.</p>
-    <p>Possuímos equipes especializadas, buscamos todas as atualizações tecnológicas, além de seguir com rigor as normas da associação brasileira de normas técnicas (ABNT).</p>
+    <div class="third-page-text-container">
+      <h2>EDIFIC CONSTRUTORA</h2>
+      <p>Realizamos o diagnóstico em edificações buscando garantir a sua integridade e atribuindo soluções aos problemas construtivos, sejam estes originados na fase de projetos, durante a execução da obra, por carência de manutenção, em função de vícios construtivos, ou ainda, em razão de sinistros.</p>
+      <p>Com objetivo de ser referência no mercado da perícia técnica e diagnóstica, a Edific Construtora visa priorizar a segurança, a durabilidade e habitabilidade das edificações, além de, atentar a saúde e o bem estar de seus usuários.</p>
+      <p>Possuímos equipes especializadas, buscamos todas as atualizações tecnológicas, além de seguir com rigor as normas da associação brasileira de normas técnicas (ABNT).</p>
+    </div>
     <QueroContratarButton/>
   </div>
 
@@ -128,6 +130,8 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  display: none;
 }
 .second-page-container > h2{
   color: #282828;
@@ -145,6 +149,37 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
   grid-template-columns: repeat(3, 1fr);
 }
 /* --------------------- */
+.third-page-container{
+  background-color: red;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+
+}
+.third-page-text-container{
+  max-width: 680px;
+  margin-bottom: 36px;
+}
+.third-page-text-container > h2{
+  color: #fff;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 46px;
+  margin-bottom: 20px;
+}
+.third-page-text-container > p{
+  text-align: justify;
+  color: #fff;
+  font-size: 17px;
+  margin-top: 10px;
+}
+@media (max-width: 547px) {
+  .third-page-text-container > h2{
+    font-size: 36px;
+    text-align: center;
+  }
+}
 
 
 
