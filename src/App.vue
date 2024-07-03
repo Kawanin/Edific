@@ -47,8 +47,27 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
       <p>Com objetivo de ser referência no mercado da perícia técnica e diagnóstica, a Edific Construtora visa priorizar a segurança, a durabilidade e habitabilidade das edificações, além de, atentar a saúde e o bem estar de seus usuários.</p>
       <p>Possuímos equipes especializadas, buscamos todas as atualizações tecnológicas, além de seguir com rigor as normas da associação brasileira de normas técnicas (ABNT).</p>
     </div>
-    <QueroContratarButton/>
+    <QueroContratarButton class="third-page-button"/>
   </div>
+
+  <div class="fourth-page-container">
+    <h2>PORQUE ESCOLHER TAB ENGENHARIA</h2>
+    <div class="fourth-page-cards-container">
+      <Card2 :image="image0" description="Possuímos corpo de engenharia especializado em engenharia diagnóstica para garantir as melhores soluções técnicas."/>
+      <Card2 :image="image0" description="Única empresa do Paraná a pertencer ao comitê da construção civil -ABNT."/>
+      <Card2 :image="image0" description="Membros da divisão técnica de engenharia diagnóstica."/>
+
+      <Card2 :image="image0" description="Empresa membro da ADPAT – Academia da patologia ."/>
+      <Card2 :image="image0" description="Empresa especialista em atendimento condominial."/>
+      <Card2 :image="image0" description="Empresa registrada no TJPR (Perita judicial)."/>
+    </div>
+    
+    <QueroContratarButton class="fourth-page-button"/>
+  </div>
+
+  <div class="fifth-page-container">
+
+</div>
 
   
   <!--<BottomBar :enterpriseLogo="EnterpriseLogo" whatsapp="(11) 97178-2034" email="comercial@tabengenharia.com.br" instagram="@tabengenharia"/>-->  
@@ -125,7 +144,7 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
     margin-bottom: 50px;
   }
 }
-/* --------------------- */
+/* ----------------------------------------------- */
 .second-page-container{
   display: flex;
   flex-direction: column;
@@ -148,10 +167,9 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
-/* --------------------- */
+/* ----------------------------------------------- */
 .third-page-container{
   background-color: red;
-  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   align-items: center
@@ -159,7 +177,8 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
 }
 .third-page-text-container{
   max-width: 680px;
-  margin-bottom: 36px;
+  padding: 50px 20px;
+  padding-bottom: 30px;
 }
 .third-page-text-container > h2{
   color: #fff;
@@ -174,10 +193,56 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
   font-size: 17px;
   margin-top: 10px;
 }
+.third-page-button{
+  margin-bottom: 36px;
+}
 @media (max-width: 547px) {
   .third-page-text-container > h2{
-    font-size: 36px;
+    font-size: 35px;
     text-align: center;
+  }
+}
+/* ----------------------------------------------- */
+.fourth-page-container{
+  background-image: url('./assets/curitiba-do-alto-guilherme-pupo-2.fw.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fourth-page-container > h2{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  padding: 0px 16px;
+  padding-top: 50px;
+  padding-bottom: 26px;
+}
+.fourth-page-cards-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 810px;
+  gap: 16px;
+  padding: 0px 10px;
+}
+.fourth-page-button{
+  margin: 36px 0px;
+}
+@media (max-width: 820px) {
+  .fourth-page-cards-container{
+    grid-template-columns: repeat(1, 1fr);
+    width: fit-content;
+    gap: 5px;
+  }
+  .fourth-page-button{
+    margin-top: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .fourth-page-cards-container{
+    gap: 20px;
   }
 }
 

@@ -27,13 +27,19 @@ defineProps({
 div{
     display: flex;
     flex-direction: row;
-    height: 140px;
+    height: 110px;
     max-width: 480px;
     padding: 10px;
+    color: white;
+    align-items: center
+}
+div > p{
+    height: fit-content;
 }
 img{
+    max-height: 100%;
     margin-right: 20px;
-    filter: brightness(0%);
+    filter: brightness(100%);
 }
 @media (max-width: 420px) {
     div{
