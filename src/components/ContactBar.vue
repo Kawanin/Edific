@@ -12,12 +12,12 @@
                 <span>{{ telephone }}</span>
             </div>
         </div>
-        <div class="instagram-container">
+        <!-- <div class="instagram-container">
             <div @click="openInstagram">
                 <InstagramIcon class="icon"/>
                 <span>{{ instagram }}</span>
             </div>
-        </div>
+        </div> -->
     </div>
 </template>
 
@@ -44,7 +44,7 @@ defineProps({
 })
 
 function openWhatsapp() {
-    window.open('http://google.com','_blank')
+    window.open('https://api.whatsapp.com/send?phone=5541987517945&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento!','_blank')
 }
 function openInstagram() {
     window.open('http://google.com','_blank')
@@ -73,6 +73,9 @@ function openInstagram() {
     width: fit-content;
     height: 100%;
     padding: 0px 28px;
+    
+}
+.telephone-container , .instagram-container{
     cursor: pointer;
 }
 .icon{
@@ -94,7 +97,10 @@ function openInstagram() {
     .contact-bar-container{
         flex-direction: column;
         flex-wrap: nowrap;
-        height: 130px;
+        height: fit-content
+    }
+    .contact-bar-container > div > div{
+        margin: 9px 0px;
     }
 }
 </style>

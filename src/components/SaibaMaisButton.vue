@@ -1,6 +1,6 @@
 <template>
     <div>
-        <a href="">
+        <a href="https://api.whatsapp.com/send?phone=5541987517945&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento!">
             <span>Saiba Mais</span>
         </a>
     </div>
@@ -14,7 +14,7 @@ a{
     fill: #fff;
     color: #fff;
     background-color: transparent;
-    background-image: linear-gradient(180deg, #ff9549 0%, #fa7516 100%);
+    background-image: linear-gradient(180deg, #30AAB7 0%, #35bac9 100%);
     border-radius: 15px;
     width: fit-content;
     padding: 12px 24px;

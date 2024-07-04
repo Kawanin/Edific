@@ -1,6 +1,4 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 import QueroContratarButton from './components/QueroContratarButton.vue'
 import Card from './components/Card.vue'
 import LocalCard from './components/LocalCard.vue'
@@ -10,10 +8,12 @@ import Card2 from './components/Card2.vue'
 import image0 from './assets/tab1.webp'
 import BottomBar from './components/BottomBar.vue'
 import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
+
+import EmailIcon from './components/icons/EmailIcon.vue'
 </script>
 
 <template>
-  <ContactBar email="contato@edificcontrutora.com" telephone="(44) 999915783" instagram="/edific.construtora"/>
+  <ContactBar email="contato@edificcontrutora.com" telephone="(41) 98751-7945" instagram="/edific.construtora"/>
 
   <div class="first-page-container">
       <img :src="EnterpriseLogoHorizontalDark" alt="logo">
@@ -24,9 +24,9 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
       <QueroContratarButton class="first-page-button"/>
   </div>
 
-  <div class="second-page-container">
+  <!-- <div class="second-page-container">
     <h2>Serviços da Engenharia Diagnóstica</h2>
-    <Card class="second-page-first-card" title="Laudo estrutural:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+    <Card class="second-page-first-card" :svg="EmailIcon" title="Laudo estrutural:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
     <div class="second-page-cards-container">
       <Card title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
       <Card title="VISTORIA CAUTELAR DE VIZINHANÇA:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
@@ -38,7 +38,7 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
       <Card title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
       <Card title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
     </div>
-  </div>
+  </div> -->
 
   <div class="third-page-container">
     <div class="third-page-text-container">
@@ -66,15 +66,12 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
   </div>
 
   <div class="fifth-page-container">
+    
+  </div>
 
-</div>
-
-  
-  <!--<BottomBar :enterpriseLogo="EnterpriseLogo" whatsapp="(11) 97178-2034" email="comercial@tabengenharia.com.br" instagram="@tabengenharia"/>-->  
-  <!-- <Card2 :image="image0" description="Possuímos corpo de engenharia especializado em engenharia diagnóstica para garantir as melhores soluções técnicas."/> -->
-  <!-- 
-  <LocalCard title="LOCAL 2" subtitle="R. São Cristóvão, 57 – ZONA 8 – Zona 08, Maringá – PR, 87050-490" telephone="(43) 99987-5018" :image="image2"/>
-  <QueroContratarButton/> -->
+  <div class="sixth-page-container">
+    <BottomBar :enterpriseLogo="EnterpriseLogoHorizontalDark" whatsapp="(11) 97178-2034" email="comercial@tabengenharia.com.br" instagram="@tabengenharia"/>
+  </div>
 </template>
 
 <style scoped>
@@ -149,8 +146,6 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  display: none;
 }
 .second-page-container > h2{
   color: #282828;
@@ -169,11 +164,11 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
 }
 /* ----------------------------------------------- */
 .third-page-container{
-  background-color: red;
   display: flex;
   flex-direction: column;
-  align-items: center
-
+  align-items: center;
+  color: #000;
+  /* color: #fff; */
 }
 .third-page-text-container{
   max-width: 680px;
@@ -181,7 +176,6 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
   padding-bottom: 30px;
 }
 .third-page-text-container > h2{
-  color: #fff;
   font-size: 45px;
   font-weight: 600;
   line-height: 46px;
@@ -189,7 +183,6 @@ import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
 }
 .third-page-text-container > p{
   text-align: justify;
-  color: #fff;
   font-size: 17px;
   margin-top: 10px;
 }

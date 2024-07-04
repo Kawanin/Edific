@@ -60,7 +60,7 @@ function openInstagram(){
 
 <style scoped>
 .wrapper{
-    width: 100vw;
+    width: 100%;
     height: 250px;
     background-color: #0D0703;
     color: #FFFFFF;
@@ -69,15 +69,9 @@ function openInstagram(){
     justify-content: center;
     align-items: center;
     position: relative;
-
-
-    
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 .container {
-    width: 1015px;
+    width: 100%;
     height: 150px;
     display: flex;
     margin-bottom: 40px;
@@ -96,13 +90,13 @@ function openInstagram(){
 }
 
 .enterprise-logo > img {
-    max-width: 200px;
+    max-width: 300px;
     height: fit-content;
 }
 
 .icon {
     height: 25px;
-    width: fit-content;
+    width: 25px;
     filter: brightness(100);
     fill: #FFFFFF;
     margin-right: 8px;
@@ -132,6 +126,7 @@ function openInstagram(){
    position: absolute;
    bottom: 0;
    padding: 20px;
+   font-size: 13px;
 }
 @media (max-width: 760px) {
     .container{
@@ -140,29 +135,48 @@ function openInstagram(){
         margin-bottom: 0px;
         width: 400px;
         position: relative;
-        background-color: blue;
         justify-content: center;
         align-items: center;
+        margin-bottom: 40px;
+        width: 100%;
     }
     .wrapper{
-        height: 400px;
+        height: 390px;
+        position: relative;
     }
     .social-network {
         border-left: none;
-        background-color: red;
         padding-left: 0;
         width: 10px;
+        text-align: center;
+        align-items: center;
+    }
+    .social-network > div{
+        width: max-content;
     }
     .enterprise-logo{
         display: flex;
         justify-content: center;
         align-items: center;
         padding-right: 0;
-        background-color: brown;
+    }
+    .enterprise-logo > img {
+        max-width: 300px;
     }
     .container > div {
-        flex-grow: default;
+        flex-grow: 0;
         width: 100%;
+    }
+    .social-network > span{
+        border-top: 1px solid white;
+        padding-top: 22px;
+        margin-top: 18px;
+        text-align: center;
+        width: 280px;
+    }
+    .copyright-container{
+        padding: 14px;
+        text-align: center;
     }
 }
 </style>

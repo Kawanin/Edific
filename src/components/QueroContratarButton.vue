@@ -2,7 +2,7 @@
 import WhatsAppIcon from './icons/WhatsAppIcon.vue'
 
 function openWhatsapp(){
-    window.open('http://google.com','_blank')
+    window.open('https://api.whatsapp.com/send?phone=5541987517945&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento!','_blank')
 }
 </script>
 
