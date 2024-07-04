@@ -66,7 +66,7 @@ import EmailIcon from './components/icons/EmailIcon.vue'
   </div>
 
   <div class="fifth-page-container">
-    
+    bla
   </div>
 
   <div class="sixth-page-container">
@@ -238,7 +238,10 @@ import EmailIcon from './components/icons/EmailIcon.vue'
     gap: 20px;
   }
 }
-
+/* ----------------------------------------------- */
+.fifth-page-container{
+  height: 500px;
+}
 
 
 </style>
