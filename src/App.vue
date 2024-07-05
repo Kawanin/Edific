@@ -8,7 +8,15 @@ import Card2 from './components/Card2.vue'
 import image0 from './assets/tab1.webp'
 import BottomBar from './components/BottomBar.vue'
 import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
-
+import DroneIcon from './assets/icon_drone.png'
+import ManutencaoIcon from './assets/icon_manutencao.png'
+import ImovelIcon from './assets/icon_imovel.png'
+import CertificadoIcon from './assets/icon_certificado.png'
+import PredioIcon from './assets/icon_predios.png'
+import CasaIcon from './assets/icon_casa.png'
+import LocalIcon from './assets/icon_local.png'
+import JudicialIcon from './assets/icon_judicial.png'
+import LaudoIcon from './assets/icon_laudo.png'
 import EmailIcon from './components/icons/EmailIcon.vue'
 import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
 </script>
@@ -29,15 +37,16 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
     <h2>Serviços da Engenharia Diagnóstica</h2>
     <Card class="second-page-first-card" :image="image0" title="Laudo estrutural:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
     <div class="second-page-cards-container">
-      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card :image="image0" title="VISTORIA CAUTELAR DE VIZINHANÇA:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card :image="image0" title="AVALIAÇÃO DE IMÓVEIS:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+    <Card :image="LaudoIcon" title="Laudo Estrutural:" subtitle="O Laudo Estrutural avalia a condição estrutural de um imóvel, examinando fundações, pilares, vigas e lajes. Identifica problemas, garantindo segurança e durabilidade, prevenindo falhas futuras."/>
+      <Card :image="DroneIcon" title="Inspeção com Drones:" subtitle="A Inspeção de Drones usa drones para inspecionar áreas de difícil acesso ou grandes extensões, capturando imagens e dados precisos. Isso permite uma análise detalhada e segura, ideal para monitoramento e inspeções em setores como construção, agronegócio e infraestrutura."/>
+      <Card :image="ManutencaoIcon" title="Plano de Manutenção:" subtitle="O Plano de Manutenção é um cronograma para inspeções e reparos de um imóvel, abrangendo sistemas como elétrica, hidráulica, estrutura e acabamento. Ajuda a prevenir problemas, prolongar a vida útil e garantir segurança e conforto."/>
+      <Card :image="ImovelIcon" title="Avaliação de Imóveis:" subtitle="Na Avaliação de Imóveis, determinamos o valor de mercado de uma propriedade com base em critérios técnicos. Essencial para negociações, compra, venda, aluguel e financiamentos, garante uma avaliação justa e precisa do valor do imóvel."/>
+      <Card :image="CertificadoIcon" title="Vistoria Cautelar de Vizinhança:" subtitle="A Vistoria Cautelar de Vizinhança inspeciona e documenta as condições das propriedades vizinhas antes de uma obra, prevenindo conflitos e identificando danos prévios para assegurar a responsabilidade por eventuais danos durante a construção."/>
+      <Card :image="PredioIcon" title="Inspeção Predial:" subtitle="Na Inspeção Predial, avaliamos as condições gerais de um edifício, incluindo instalações elétricas, hidráulicas, sistemas de segurança, revestimentos e áreas comuns. Identificamos problemas e necessidades de manutenção para garantir funcionalidade, segurança e preservação do patrimônio."/>
+      <Card :image="CasaIcon" title="Laudo de Vistoria de Recebimento e Entrega de Imóveis:" subtitle="O Laudo de Vistoria de Recebimento e Entrega de Imóveis documenta as condições de um imóvel ao ser entregue ou recebido, registrando seu estado de conservação e identificando defeitos ou pendências. Garante transparência e segurança nas transações imobiliárias, prevenindo disputas."/>
+      <Card :image="LocalIcon" title="Laudo de Vistoria Locativo:" subtitle="O Laudo de Vistoria Locativo detalha as condições de um imóvel no início e no fim de um contrato de locação. Registra o estado de conservação dos ambientes e itens, garantindo transparência entre locador e locatário e prevenindo disputas sobre danos ou desgaste..
+"/>
+      <Card :image="JudicialIcon" title="Assistência Técnica em Ações Judiciais:" subtitle="Na Assistência Técnica em Ações Judiciais, oferecemos suporte especializado em questões imobiliárias, elaborando laudos periciais, vistorias e pareceres técnicos para servir como provas em disputas legais, garantindo uma avaliação imparcial e fundamentada para resolver conflitos judiciais."/>
     </div>
   </div>
 
@@ -154,6 +163,7 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   align-items: center;
   padding: 60px 20px;
   text-align: center;
+  box-shadow: -1px 6px 44px -44px rgba(0,0,0,0.52);
 }
 .second-page-container > h2{
   color: #282828;
@@ -164,6 +174,7 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
 .second-page-first-card{
   max-width: 700px;
   margin-bottom: 26px;
+  height: 260px;
 }
 .second-page-cards-container{
   display: grid;
@@ -177,6 +188,8 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   }
   .second-page-cards-container > div{
     max-width: 700px;
+    height: fit-content;
+    padding-bottom: 124px;
   }
   .second-page-first-card{
     margin-bottom: 20px;
@@ -191,7 +204,6 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   flex-direction: column;
   align-items: center;
   color: #000;
-  background-color: red;
   padding: 60px 0px;
   /* color: #fff; */
 }
@@ -206,6 +218,7 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   font-weight: 600;
   line-height: 46px;
   margin-bottom: 20px;
+  text-align: center;
 }
 .third-page-text-container > p{
   text-align: justify;
