@@ -10,6 +10,7 @@ import BottomBar from './components/BottomBar.vue'
 import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
 
 import EmailIcon from './components/icons/EmailIcon.vue'
+import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
 </script>
 
 <template>
@@ -24,21 +25,21 @@ import EmailIcon from './components/icons/EmailIcon.vue'
       <QueroContratarButton class="first-page-button"/>
   </div>
 
-  <!-- <div class="second-page-container">
+  <div class="second-page-container">
     <h2>Serviços da Engenharia Diagnóstica</h2>
-    <Card class="second-page-first-card" :svg="EmailIcon" title="Laudo estrutural:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+    <Card class="second-page-first-card" :image="image0" title="Laudo estrutural:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
     <div class="second-page-cards-container">
-      <Card title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card title="VISTORIA CAUTELAR DE VIZINHANÇA:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card title="AVALIAÇÃO DE IMÓVEIS:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
-      <Card title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+      <Card :image="image0" title="VISTORIA CAUTELAR DE VIZINHANÇA:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+      <Card :image="image0" title="AVALIAÇÃO DE IMÓVEIS:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+      <Card :image="image0" title="INSPEÇÃO PREDIAL:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
     </div>
-  </div> -->
+  </div>
 
   <div class="third-page-container">
     <div class="third-page-text-container">
@@ -66,7 +67,12 @@ import EmailIcon from './components/icons/EmailIcon.vue'
   </div>
 
   <div class="fifth-page-container">
-    bla
+    <WhatsappIcon class="fifth-page-icon"/>
+    
+    <h1>Precisa contratar nossos serviços?</h1>
+    <h2>Entre em contato no botão abaixo que iremos te ajudar.</h2>
+
+    <QueroContratarButton/>
   </div>
 
   <div class="sixth-page-container">
@@ -146,21 +152,38 @@ import EmailIcon from './components/icons/EmailIcon.vue'
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 60px 20px;
+  text-align: center;
 }
 .second-page-container > h2{
   color: #282828;
   font-size: 35px;
   font-weight: 600;
-  margin-top: 60px;
   margin-bottom: 36px;
 }
 .second-page-first-card{
   max-width: 700px;
+  margin-bottom: 26px;
 }
 .second-page-cards-container{
   display: grid;
-  gap: 20px;
+  gap: 26px;
   grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 1165px) {
+  .second-page-cards-container{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .second-page-cards-container > div{
+    max-width: 700px;
+  }
+  .second-page-first-card{
+    margin-bottom: 20px;
+  }
+  .second-page-container{
+    padding: 60px 0px;
+  }
 }
 /* ----------------------------------------------- */
 .third-page-container{
@@ -168,12 +191,15 @@ import EmailIcon from './components/icons/EmailIcon.vue'
   flex-direction: column;
   align-items: center;
   color: #000;
+  background-color: red;
+  padding: 60px 0px;
   /* color: #fff; */
 }
 .third-page-text-container{
   max-width: 680px;
   padding: 50px 20px;
   padding-bottom: 30px;
+  padding-top: 0;
 }
 .third-page-text-container > h2{
   font-size: 45px;
@@ -185,9 +211,6 @@ import EmailIcon from './components/icons/EmailIcon.vue'
   text-align: justify;
   font-size: 17px;
   margin-top: 10px;
-}
-.third-page-button{
-  margin-bottom: 36px;
 }
 @media (max-width: 547px) {
   .third-page-text-container > h2{
@@ -203,6 +226,7 @@ import EmailIcon from './components/icons/EmailIcon.vue'
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 60px 0px;
 }
 .fourth-page-container > h2{
   color: #fff;
@@ -210,7 +234,6 @@ import EmailIcon from './components/icons/EmailIcon.vue'
   font-weight: 600;
   text-align: center;
   padding: 0px 16px;
-  padding-top: 50px;
   padding-bottom: 26px;
 }
 .fourth-page-cards-container{
@@ -221,7 +244,7 @@ import EmailIcon from './components/icons/EmailIcon.vue'
   padding: 0px 10px;
 }
 .fourth-page-button{
-  margin: 36px 0px;
+  margin-top: 36px;
 }
 @media (max-width: 820px) {
   .fourth-page-cards-container{
@@ -240,8 +263,33 @@ import EmailIcon from './components/icons/EmailIcon.vue'
 }
 /* ----------------------------------------------- */
 .fifth-page-container{
-  height: 500px;
+  min-height: 430px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 36px 0px;
 }
+.fifth-page-icon{
+  height: 100px;
+  margin-bottom: 26px
+}
+.fifth-page-container > h1{
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 12px;
+  padding: 0px 20px;
 
+}
+.fifth-page-container > h2{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 26px;
+  padding: 0px 20px;
+}
 
 </style>

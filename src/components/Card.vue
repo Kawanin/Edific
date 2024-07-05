@@ -1,8 +1,8 @@
 <template>
     <div class="card-container">
         
-        <div class="svg-container">
-            
+        <div class="image-container">
+            <img :src="image" :alt="imageDescription">
         </div>
        
 
@@ -19,6 +19,10 @@
 import SaibaMaisButton from './SaibaMaisButton.vue'
 
 defineProps({
+    image: {
+        image: String,
+        required: true
+    },
     title: {
         type: String,
         required: true
@@ -42,11 +46,16 @@ defineProps({
     box-shadow: 0px 7px 19px -8px rgba(0,0,0,0.15);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.svg{
-    height: 50px;
-    width: 50px;
+.image-container{
+    height: 60px;
     fill: #30AAB7;
+    position: relative;
+}
+.image-container > img{
+    filter: brightness(0) saturate(100%) invert(58%) sepia(37%) saturate(742%) hue-rotate(137deg) brightness(92%) contrast(90%);
+    height: 100%
 }
 .text-container{
     margin-bottom: 30px

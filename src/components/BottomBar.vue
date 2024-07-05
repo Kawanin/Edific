@@ -119,7 +119,7 @@ function openInstagram(){
     display: flex;
     align-items: center;
 }
-.social-network > div:not(:first-child) {
+.social-network > div:not(:first-of-type) {
     cursor: pointer;
 }
 .copyright-container{
