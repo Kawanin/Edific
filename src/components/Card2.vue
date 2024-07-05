@@ -53,11 +53,12 @@ img{
     margin-right: 20px;
     filter: brightness(0) saturate(100%) invert(58%) sepia(37%) saturate(742%) hue-rotate(137deg) brightness(92%) contrast(90%);
 }
-@media (max-width: 420px) {
+@media (max-width: 470px) {
     .container{
         flex-direction: column;
         height: fit-content;
         align-items: center;
+        text-align: center;
     }
     img{
         margin-right: 0px;
