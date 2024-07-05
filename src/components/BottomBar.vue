@@ -10,10 +10,10 @@
                     <EmailIcon class="icon" />
                     <span>{{ email }}</span>
                 </div>
-                <div  @click="openInstagram">
+               <!--  <div  @click="openInstagram">
                     <InstagramIcon class="icon" />
                     <span>{{ instagram }}</span>
-                </div>
+                </div> -->
                 <div  @click="openWhatsapp">
                     <WhatsAppIcon class="icon" />
                     <span>{{ whatsapp }}</span>
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="copyright-container">
-            <p>Copyright 2023 © TAB Engenharia –  Todos os direitos reservados.</p>
+            <p>Copyright 2024 © Edific Construtora –  Todos os direitos reservados.</p>
         </div>
     </div>
 </template>
@@ -51,7 +51,7 @@ defineProps({
 })
 
 function openWhatsapp(){
-    window.open('http://google.com','_blank')
+    window.open('https://api.whatsapp.com/send?phone=5541987517945&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento!','_blank')
 }
 function openInstagram(){
     window.open('http://google.com','_blank')

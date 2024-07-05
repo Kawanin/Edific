@@ -1,8 +1,6 @@
 <script setup>
 import QueroContratarButton from './components/QueroContratarButton.vue'
 import Card from './components/Card.vue'
-import LocalCard from './components/LocalCard.vue'
-import image2 from "./assets/mapa2.webp"
 import ContactBar from './components/ContactBar.vue'
 import Card2 from './components/Card2.vue'
 import image0 from './assets/tab1.webp'
@@ -17,7 +15,10 @@ import CasaIcon from './assets/icon_casa.png'
 import LocalIcon from './assets/icon_local.png'
 import JudicialIcon from './assets/icon_judicial.png'
 import LaudoIcon from './assets/icon_laudo.png'
-import EmailIcon from './components/icons/EmailIcon.vue'
+import VerificadoIcon from './assets/icon_verificado.png'
+import MarcadorIcon from './assets/icon_marcador.png'
+import TecnologiaIcon from './assets/icon_tecnologia.png'
+import SatisfacaoIcon from './assets/icon_satisfacao.png'
 import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
 </script>
 
@@ -61,18 +62,15 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   </div>
 
   <div class="fourth-page-container">
-    <h2>PORQUE ESCOLHER TAB ENGENHARIA</h2>
+    <h2>PORQUE ESCOLHER EDIFIC</h2>
     <div class="fourth-page-cards-container">
-      <Card2 :image="image0" description="Possuímos corpo de engenharia especializado em engenharia diagnóstica para garantir as melhores soluções técnicas."/>
-      <Card2 :image="image0" description="Única empresa do Paraná a pertencer ao comitê da construção civil -ABNT."/>
-      <Card2 :image="image0" description="Membros da divisão técnica de engenharia diagnóstica."/>
-
-      <Card2 :image="image0" description="Empresa membro da ADPAT – Academia da patologia ."/>
-      <Card2 :image="image0" description="Empresa especialista em atendimento condominial."/>
-      <Card2 :image="image0" description="Empresa registrada no TJPR (Perita judicial)."/>
-    </div>
-    
-    <QueroContratarButton class="fourth-page-button"/>
+      <Card2 title="Atendimento Personalizado" :image="VerificadoIcon" description="Atendimento personalizado, focado nas necessidades específicas de cada cliente."/>
+      <Card2 title="Amplo Conhecimento Técnico" :image="MarcadorIcon" description="Equipe com vasta experiência em projetos complexos, assegurando soluções eficazes e inovadoras."/>
+ 
+      <Card2 title="Tecnologia de Ponta" :image="TecnologiaIcon" description="Uso de tecnologias da atualidade em diagnósticos e soluções, proporcionando maior precisão e eficiência."/>
+      <Card2 title="Satisfação do Cliente Garantida" :image="SatisfacaoIcon" description="Alta taxa de satisfação dos clientes, comprovada por inúmeros depoimentos e casos de sucesso."/>
+    </div>    
+    <!-- <QueroContratarButton class="fourth-page-button"/> -->
   </div>
 
   <div class="fifth-page-container">
@@ -85,12 +83,13 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   </div>
 
   <div class="sixth-page-container">
-    <BottomBar :enterpriseLogo="EnterpriseLogoHorizontalDark" whatsapp="(11) 97178-2034" email="comercial@tabengenharia.com.br" instagram="@tabengenharia"/>
+    <BottomBar :enterpriseLogo="EnterpriseLogoHorizontalDark" whatsapp="(41) 98751-7945" email="contato@edificcontrutora.com" instagram="@tabengenharia"/>
   </div>
 </template>
 
 <style scoped>
 .first-page-container{
+  z-index: 1;
   display: flex;
   flex-direction: column;
   height: 670px;
@@ -240,34 +239,35 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 60px 0px;
   color: #282828;
+  background-color: #f2f2f2;
+  text-align: center;
 }
 .fourth-page-container > h2{
   font-size: 40px;
   font-weight: 600;
-  text-align: center;
   padding: 0px 16px;
   padding-bottom: 26px;
 }
 .fourth-page-cards-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 810px;
+  max-width: fit-content;
   gap: 16px;
   padding: 0px 10px;
 }
+
 .fourth-page-button{
-  margin-top: 36px;
+  margin-top: 38px;
 }
-@media (max-width: 820px) {
+
+@media (max-width: 1060px) {
   .fourth-page-cards-container{
     grid-template-columns: repeat(1, 1fr);
     width: fit-content;
-    gap: 5px;
-  }
-  .fourth-page-button{
-    margin-top: 20px;
+    gap: 15px;
   }
 }
 @media (max-width: 420px) {

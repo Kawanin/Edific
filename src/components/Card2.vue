@@ -1,7 +1,10 @@
 <template>
-    <div>
+    <div class="container">
         <img :src="image" :alt="imageDescription">
-        <p>{{ description }}</p>
+        <div>
+            <h3>{{ title }}</h3>
+            <p>{{ description }}</p>
+        </div>       
     </div>
 </template>
 
@@ -9,6 +12,10 @@
 defineProps({
     image: {
         image: String,
+        required: true
+    },
+    title: {
+        description: String,
         required: true
     },
     description: {
@@ -24,35 +31,37 @@ defineProps({
 
 
 <style scoped>
-div{
+.container{
     display: flex;
     flex-direction: row;
     height: 110px;
-    max-width: 480px;
-    padding: 10px;
-    color: white;
+    max-width: 450px;
+    padding: 18px 26px;
     align-items: center;
     color: #282828;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 3px 3px 26px -4px rgba(0,0,0,0.15);
+    text-align: start;
 }
-div > p{
-    height: fit-content;
+.container > div > h3{
+    font-weight: 700;
+    font-size: 16px;
 }
 img{
     max-height: 100%;
     margin-right: 20px;
     filter: brightness(0) saturate(100%) invert(58%) sepia(37%) saturate(742%) hue-rotate(137deg) brightness(92%) contrast(90%);
-    filter: brightness(0) saturate(100%) invert(64%) sepia(83%) saturate(2918%) hue-rotate(326deg) brightness(89%) contrast(95%);
 }
 @media (max-width: 420px) {
-    div{
+    .container{
         flex-direction: column;
         height: fit-content;
         align-items: center;
-        text-align: center;
     }
     img{
         margin-right: 0px;
-        width: 45vw;
+        width: 70px;
         margin-bottom: 20px;
     }
 }
