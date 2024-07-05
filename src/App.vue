@@ -163,7 +163,6 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   align-items: center;
   padding: 60px 20px;
   text-align: center;
-  box-shadow: -1px 6px 44px -44px rgba(0,0,0,0.52);
 }
 .second-page-container > h2{
   color: #282828;
@@ -193,6 +192,9 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   }
   .second-page-first-card{
     margin-bottom: 20px;
+    max-width: 700px;
+    height: fit-content;
+    padding-bottom: 124px;
   }
   .second-page-container{
     padding: 60px 0px;
@@ -203,9 +205,11 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #000;
   padding: 60px 0px;
-  /* color: #fff; */
+  background-image: url('./assets/curitiba-do-alto-guilherme-pupo-2.fw.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
 }
 .third-page-text-container{
   max-width: 680px;
@@ -233,16 +237,13 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
 }
 /* ----------------------------------------------- */
 .fourth-page-container{
-  background-image: url('./assets/curitiba-do-alto-guilherme-pupo-2.fw.png');
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 60px 0px;
+  color: #282828;
 }
 .fourth-page-container > h2{
-  color: #fff;
   font-size: 40px;
   font-weight: 600;
   text-align: center;
@@ -277,17 +278,21 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
 /* ----------------------------------------------- */
 .fifth-page-container{
   min-height: 430px;
-  color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 36px 0px;
+  background-image: url('./assets/landscape-city-cityscape-lake-water-nature-847001-wallhere.com.fw.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .fifth-page-icon{
   height: 100px;
-  margin-bottom: 26px
+  margin-bottom: 26px;
+  fill: white;
 }
 .fifth-page-container > h1{
   font-size: 35px;

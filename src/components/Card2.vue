@@ -31,7 +31,8 @@ div{
     max-width: 480px;
     padding: 10px;
     color: white;
-    align-items: center
+    align-items: center;
+    color: #282828;
 }
 div > p{
     height: fit-content;
@@ -39,7 +40,8 @@ div > p{
 img{
     max-height: 100%;
     margin-right: 20px;
-    filter: brightness(100%);
+    filter: brightness(0) saturate(100%) invert(58%) sepia(37%) saturate(742%) hue-rotate(137deg) brightness(92%) contrast(90%);
+    filter: brightness(0) saturate(100%) invert(64%) sepia(83%) saturate(2918%) hue-rotate(326deg) brightness(89%) contrast(95%);
 }
 @media (max-width: 420px) {
     div{
