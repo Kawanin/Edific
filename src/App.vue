@@ -56,7 +56,7 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
       <h2>EDIFIC CONSTRUTORA</h2>
       <p>Realizamos o diagnóstico em edificações buscando garantir a sua integridade e atribuindo soluções aos problemas construtivos, sejam estes originados na fase de projetos, durante a execução da obra, por carência de manutenção, em função de vícios construtivos, ou ainda, em razão de sinistros.</p>
       <p>Com objetivo de ser referência no mercado da perícia técnica e diagnóstica, a Edific Construtora visa priorizar a segurança, a durabilidade e habitabilidade das edificações, além de, atentar a saúde e o bem estar de seus usuários.</p>
-      <p>Possuímos equipes especializadas, buscamos todas as atualizações tecnológicas, além de seguir com rigor as normas da associação brasileira de normas técnicas (ABNT).</p>
+      <p>Possuímos equipes especializadas, buscamos todas as a  tualizações tecnológicas, além de seguir com rigor as normas da associação brasileira de normas técnicas (ABNT).</p>
     </div>
     <QueroContratarButton class="third-page-button"/>
   </div>
@@ -96,7 +96,7 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url('./assets/first-page-background.fw.png');
+  background-image: url('./assets/first-page-background.fw.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -205,7 +205,7 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   flex-direction: column;
   align-items: center;
   padding: 60px 0px;
-  background-image: url('./assets/curitiba-do-alto-guilherme-pupo-2.fw.png');
+  background-image: url('./assets/curitiba-do-alto-guilherme-pupo-2.fw.webp');
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -285,7 +285,7 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   align-items: center;
   text-align: center;
   padding: 36px 0px;
-  background-image: url('./assets/landscape-city-cityscape-lake-water-nature-847001-wallhere.com.fw.png');
+  background-image: url('./assets/landscape-city-cityscape-lake-water-nature-847001-wallhere.com.fw.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
