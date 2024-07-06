@@ -27,9 +27,6 @@ defineProps({
         type: String,
         required: true
     },
-    imageDescription: {
-        type: String,
-    },
 })
 
 function openGoogleMaps() {

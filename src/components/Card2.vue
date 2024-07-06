@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <img :src="image" :alt="imageDescription">
+        <img :src="image" alt="">
         <div>
             <h3>{{ title }}</h3>
             <p>{{ description }}</p>
@@ -22,10 +22,6 @@ defineProps({
         description: String,
         required: true
     },
-    subtimageDescriptionitle: {
-        description: String,
-        required: false
-    }
 })
 </script>
 

@@ -2,7 +2,7 @@
     <div class="card-container">
         
         <div class="image-container">
-            <img :src="image" :alt="imageDescription">
+            <img :src="image" alt="">
         </div>
        
 
