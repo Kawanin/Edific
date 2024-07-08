@@ -215,6 +215,7 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   padding: 50px 20px;
   padding-bottom: 30px;
   padding-top: 0;
+  
 }
 .third-page-text-container > h2{
   font-size: 45px;
@@ -222,11 +223,13 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   line-height: 46px;
   margin-bottom: 20px;
   text-align: center;
+  color: #30aab5;
 }
 .third-page-text-container > p{
   text-align: justify;
   font-size: 17px;
   margin-top: 10px;
+  color: #30aab5;
 }
 @media (max-width: 547px) {
   .third-page-text-container > h2{
