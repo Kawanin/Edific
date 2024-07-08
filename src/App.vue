@@ -36,7 +36,7 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
 
   <div class="second-page-container">
     <h2>Serviços da Engenharia Diagnóstica</h2>
-    <Card class="second-page-first-card" :image="image0" title="Laudo estrutural:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+    <Card class="second-page-first-card" :image="image0" title="Laudo de Vizinhança:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
     <div class="second-page-cards-container">
     <Card :image="LaudoIcon" title="Laudo Estrutural:" subtitle="O Laudo Estrutural avalia a condição estrutural de um imóvel, examinando fundações, pilares, vigas e lajes. Identifica problemas, garantindo segurança e durabilidade, prevenindo falhas futuras."/>
       <Card :image="DroneIcon" title="Inspeção com Drones:" subtitle="A Inspeção de Drones usa drones para inspecionar áreas de difícil acesso ou grandes extensões, capturando imagens e dados precisos. Isso permite uma análise detalhada e segura, ideal para monitoramento e inspeções em setores como construção, agronegócio e infraestrutura."/>
