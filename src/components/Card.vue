@@ -11,7 +11,7 @@
             <p class="subtitle">{{ subtitle }}</p>
         </div>
 
-        <SaibaMaisButton class="button"/>
+        <SaibaMaisButton :message="this.message" class="button"/>
     </div>
 </template>
 

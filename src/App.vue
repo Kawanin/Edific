@@ -3,17 +3,16 @@ import QueroContratarButton from './components/QueroContratarButton.vue'
 import Card from './components/Card.vue'
 import ContactBar from './components/ContactBar.vue'
 import Card2 from './components/Card2.vue'
-import image0 from './assets/tab1.webp'
 import BottomBar from './components/BottomBar.vue'
 import EnterpriseLogoHorizontalDark from './assets/logo-horizontal-dark.png'
 import DroneIcon from './assets/icon_drone.png'
+import ProjetoIcon from './assets/icon_projeto.png'
 import ManutencaoIcon from './assets/icon_manutencao.png'
-import ImovelIcon from './assets/icon_imovel.png'
 import CertificadoIcon from './assets/icon_certificado.png'
 import PredioIcon from './assets/icon_predios.png'
 import CasaIcon from './assets/icon_casa.png'
-import LocalIcon from './assets/icon_local.png'
 import JudicialIcon from './assets/icon_judicial.png'
+import ConstrucaoIcon from './assets/icon_construcao.png'
 import LaudoIcon from './assets/icon_laudo.png'
 import VerificadoIcon from './assets/icon_verificado.png'
 import MarcadorIcon from './assets/icon_marcador.png'
@@ -29,25 +28,24 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   <div class="first-page-container">
       <img :src="EnterpriseLogoHorizontalDark" alt="logo">
       <div class="first-page-text-container">
-        <span class="first-page-title">QUALIDADE E AGILIDADE NO MERCADO DA PERÍCIAS, AVALIAÇÕES E DIAGNÓSTICOS DAS EDIFICAÇÕES</span>
-        <span class="first-page-subtitle">Perícias, avaliações e diagnósticos das edificações</span>
+        <span class="first-page-title">PERÍCIAS, AVALIAÇÕES E DIAGNÓSTICOS DAS EDIFICAÇÕES</span>
+        <span class="first-page-subtitle">Seu Parceiro para Obras e Avaliações Imobiliárias.</span>
       </div>
       <QueroContratarButton class="first-page-button"/>
   </div>
 
   <div class="second-page-container">
     <h2>Serviços da Engenharia Diagnóstica</h2>
-    <Card class="second-page-first-card" :image="VizinhancaIcon" title="Laudo de Vizinhança:" subtitle="O Laudo Cautelar de Vizinhança ou simplesmente Laudo de Vizinhança, é o documento que visa evitar conflitos desnecessárias em casos de danos causados por uma obra em imóveis localizados em seu entorno."/>
+    <Card class="second-page-first-card" :image="VizinhancaIcon" title="Avaliação de Imóveis:" subtitle="Na Avaliação de Imóveis, determinamos o valor de mercado de uma propriedade com base em critérios técnicos. Essencial para negociações, compra, venda, aluguel e financiamentos, garante uma avaliação justa e precisa do valor do imóvel."/>
     <div class="second-page-cards-container">
-    <Card :image="LaudoIcon" title="Laudo Estrutural:" subtitle="O Laudo Estrutural avalia a condição estrutural de um imóvel, examinando fundações, pilares, vigas e lajes. Identifica problemas, garantindo segurança e durabilidade, prevenindo falhas futuras."/>
-      <Card :image="DroneIcon" title="Inspeção com Drones:" subtitle="A Inspeção de Drones usa drones para inspecionar áreas de difícil acesso ou grandes extensões, capturando imagens e dados precisos. Isso permite uma análise detalhada e segura, ideal para monitoramento e inspeções em setores como construção, agronegócio e infraestrutura."/>
-      <Card :image="ManutencaoIcon" title="Plano de Manutenção:" subtitle="O Plano de Manutenção é um cronograma para inspeções e reparos de um imóvel, abrangendo sistemas como elétrica, hidráulica, estrutura e acabamento. Ajuda a prevenir problemas, prolongar a vida útil e garantir segurança e conforto."/>
-      <Card :image="ImovelIcon" title="Avaliação de Imóveis:" subtitle="Na Avaliação de Imóveis, determinamos o valor de mercado de uma propriedade com base em critérios técnicos. Essencial para negociações, compra, venda, aluguel e financiamentos, garante uma avaliação justa e precisa do valor do imóvel."/>
-      <Card :image="CertificadoIcon" title="Vistoria Cautelar de Vizinhança:" subtitle="A Vistoria Cautelar de Vizinhança inspeciona e documenta as condições das propriedades vizinhas antes de uma obra, prevenindo conflitos e identificando danos prévios para assegurar a responsabilidade por eventuais danos durante a construção."/>
+      <Card :image="ConstrucaoIcon" title="Reformas e Construção:" subtitle="Oferecemos serviços completos de reformas e construção, adaptados às suas necessidades. Realizamos desde pequenas reformas residenciais até grandes projetos comerciais, com foco na qualidade, segurança e eficiência. Acompanhamos todas as etapas da obra, assegurando prazo e orçamento estabelecidos."/>
+      <Card :image="ProjetoIcon" title="Projetos de Engenharia Civil:" subtitle="Desenvolvemos projetos de engenharia civil com precisão técnica e inovação. Nossa equipe elabora projetos estruturais, hidráulicos, elétricos e de infraestrutura, integrando soluções sustentáveis. Oferecemos suporte completo desde a concepção até a execução, garantindo funcionalidade, estética e segurança."/>
+      <Card :image="LaudoIcon" title="Laudo Pericial:" subtitle="Elaboramos laudos periciais técnicos detalhados para avaliar condições de imóveis e construções. Identificamos patologias construtivas, analisamos estruturas e verificamos conformidade com normas. Atuamos em processos judiciais e extrajudiciais, fornecendo relatórios precisos e imparciais para resolução de disputas e decisões fundamentadas."/>
       <Card :image="PredioIcon" title="Inspeção Predial:" subtitle="Na Inspeção Predial, avaliamos as condições gerais de um edifício, incluindo instalações elétricas, hidráulicas, sistemas de segurança, revestimentos e áreas comuns. Identificamos problemas e necessidades de manutenção para garantir funcionalidade, segurança e preservação do patrimônio."/>
+      <Card :image="DroneIcon" title="Inspeção com Drones:" subtitle="A Inspeção de Drones usa drones para inspecionar áreas de difícil acesso ou grandes extensões, capturando imagens e dados precisos. Isso permite uma análise detalhada e segura, ideal para monitoramento e inspeções em setores como construção, agronegócio e infraestrutura."/>
+      <Card :image="CertificadoIcon" title="Vistoria Cautelar de Vizinhança:" subtitle="A Vistoria Cautelar de Vizinhança inspeciona e documenta as condições das propriedades vizinhas antes de uma obra, prevenindo conflitos e identificando danos prévios para assegurar a responsabilidade por eventuais danos durante a construção."/>
+      <Card :image="ManutencaoIcon" title="Gerenciamento de Obras:" subtitle="Oferecemos gerenciamento de obras para garantir que seu projeto seja concluído no prazo e dentro do orçamento. Coordenamos todas as fases da construção, supervisionando cronogramas. Garantimos a resolução rápida de problemas e mantemos tudo alinhado aos objetivos do cliente, assegurando uma execução eficiente."/>
       <Card :image="CasaIcon" title="Laudo de Vistoria de Recebimento e Entrega de Imóveis:" subtitle="O Laudo de Vistoria de Recebimento e Entrega de Imóveis documenta as condições de um imóvel ao ser entregue ou recebido, registrando seu estado de conservação e identificando defeitos ou pendências. Garante transparência e segurança nas transações imobiliárias, prevenindo disputas."/>
-      <Card :image="LocalIcon" title="Laudo de Vistoria Locativo:" subtitle="O Laudo de Vistoria Locativo detalha as condições de um imóvel no início e no fim de um contrato de locação. Registra o estado de conservação dos ambientes e itens, garantindo transparência entre locador e locatário e prevenindo disputas sobre danos ou desgaste..
-"/>
       <Card :image="JudicialIcon" title="Assistência Técnica em Ações Judiciais:" subtitle="Na Assistência Técnica em Ações Judiciais, oferecemos suporte especializado em questões imobiliárias, elaborando laudos periciais, vistorias e pareceres técnicos para servir como provas em disputas legais, garantindo uma avaliação imparcial e fundamentada para resolver conflitos judiciais."/>
     </div>
   </div>
@@ -224,13 +222,11 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   line-height: 46px;
   margin-bottom: 20px;
   text-align: center;
-  color: #30aab5;
 }
 .third-page-text-container > p{
   text-align: justify;
   font-size: 17px;
   margin-top: 10px;
-  color: #30aab5;
 }
 @media (max-width: 547px) {
   .third-page-text-container > h2{
