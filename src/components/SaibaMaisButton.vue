@@ -1,13 +1,27 @@
 <template>
-    <div>
-        <a href="https://api.whatsapp.com/send?phone=5541987517945&text=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20um%20atendimento!">
-            <span>Saiba Mais</span>
-        </a>
+    <div @click="openButton">
+        <span>Saiba Mais</span>
     </div>
 </template>
 
+<script setup>
+const props = defineProps({
+    message: {
+        type: String,
+    }
+})
+
+function openButton(){
+    let string = props.message;
+    let newString = string.replace(/\s/g, "%20");
+
+    window.open('https://api.whatsapp.com/send?phone=5541987517945&text=' + newString, '_blank')
+}
+</script>
+
+
 <style scoped>
-a{
+div{
     font-size: 16px;
     font-weight: 500;
     text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
@@ -22,6 +36,7 @@ a{
     transition: .3s ease-out;
     display: inline-block;
     text-decoration: none; 
+    cursor: pointer;
 }
 a:hover{
     transform: translate(0, -8px);
