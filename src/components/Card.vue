@@ -11,7 +11,7 @@
             <p class="subtitle">{{ subtitle }}</p>
         </div>
 
-        <SaibaMaisButton :message="this.message" class="button"/>
+        <SaibaMaisButton :message="scopeMessage" class="button"/>
     </div>
 </template>
 
@@ -30,6 +30,9 @@ defineProps({
     subtitle: {
         type: String,
         required: true
+    },
+    scopeMessage: {
+        type: String,
     },
 })
 </script>
