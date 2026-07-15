@@ -15,7 +15,7 @@ function openButton(){
     let string = props.message;
     let newString = string.replace(/\s/g, "%20");
 
-    window.open('https://api.whatsapp.com/send?phone=5541987517945&text=' + newString, '_blank')
+    window.open('https://api.whatsapp.com/send?phone=5541999007805&text=' + newString, '_blank')
 }
 </script>
 

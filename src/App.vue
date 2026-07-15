@@ -23,7 +23,7 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
 </script>
 
 <template>
-  <ContactBar email="contato@edificcontrutora.com" telephone="(41) 98751-7945" instagram="/edific.construtora"/>
+  <ContactBar email="contato@edificconstrutora.com" telephone="(41) 99900-7805" instagram="/edific.construtora"/>
 
   <div class="first-page-container">
       <img :src="EnterpriseLogoHorizontalDark" alt="logo">
@@ -82,7 +82,7 @@ import WhatsappIcon from './components/icons/WhatsAppIcon.vue'
   </div>
 
   <div class="sixth-page-container">
-    <BottomBar :enterpriseLogo="EnterpriseLogoHorizontalDark" whatsapp="(41) 98751-7945" email="contato@edificcontrutora.com" instagram="@tabengenharia"/>
+    <BottomBar :enterpriseLogo="EnterpriseLogoHorizontalDark" whatsapp="(41) 99900-7805" email="contato@edificconstrutora.com" instagram="@tabengenharia"/>
   </div>
 </template>
 
